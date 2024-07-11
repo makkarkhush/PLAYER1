@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/1f7edcc9c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="music-player">
+
+             <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angles-left" style="color: #ffffff;"></i>
+                </div>
+              
+                <div class="circle">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </div>
+             </nav>
+             <img src="/1-SINGLE-IMAGE_2021-10-26-12-58-48_thumbnail.jpg" class="song-img">
+             <h1>BIJLEE BIJLEE</h1>
+             <a href="https://www.bing.com/search?pglt=171&q=Hardy+Sandhu&cvid=98b61b4fb6ae42cab2a14d8e83064a8e&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBAAGEDSAQkxMjEyMmowajGoAgiwAgE&FORM=ANNTA1&PC=HCTS">Hardy Sandhu</a>
+             <a href="https://www.bing.com/search?q=Jaani&qs=n&form=QBRE&sp=-1&ghc=1&lq=0&pq=jaani&sc=11-5&sk=&cvid=F7DAA9D436404175B3749F6279861670&ghsh=0&ghacc=0&ghpl=">Jaani</a>
+             <div class="audio">
+                <audio  id="song">
+                    <source src="/WhatsApp Audio 2024-07-07 at 11.42.17_101a4ea1.mp3">
+                </audio>
+                <input type="range" value="0" id="progress">
+
+                <div class="controls">
+                    <div><i class="fa-solid fa-backward"></i></div>
+                    <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                    <div><i class="fa-solid fa-forward"></i></div>
+                </div>
+             </div>
+            
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
